@@ -1,8 +1,17 @@
 package com.horizonleap.benchbrasil.model;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Id;
+
+
 public class Funcionario {
+
+    @Id
+    @Column(name = "id_funcionario")
     int id;
+    @Column(name = "matricula")
     int matricula;
+    @Column(name = "nome")
     String nome;
 
     public int getId() {
